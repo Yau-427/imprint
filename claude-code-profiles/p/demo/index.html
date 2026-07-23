@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sample Founder — execution profile · imprint</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Spectral:ital@0;1&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{--g1:#0c101d;--g2:#101827;--bone:#e9e4d4;--tx:#c9d4e4;--mut:#8a9ab1;--cy:#22d3ee;
+    --cyd:rgba(34,211,238,.32);--hair:rgba(201,212,228,.12);--term:#46d17e;--amb:#e5a50a;
+    --serif:'Spectral',Georgia,serif;--display:'Playfair Display',Georgia,serif;--mono:'JetBrains Mono',Menlo,monospace}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:linear-gradient(175deg,var(--g1),var(--g2) 60%,var(--g1));color:var(--tx);
+    font-family:var(--serif);font-size:17px;line-height:1.7;min-height:100vh}
+  .sheet{max-width:860px;margin:0 auto;padding:0 26px 80px}
+  .plate{display:flex;justify-content:space-between;padding:24px 0 12px;border-bottom:1.5px solid var(--cyd);
+    font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+  .plate b{color:var(--cy)}
+  .sample{background:var(--amb);color:var(--g1);font-weight:700;padding:2px 8px;border-radius:3px}
+  header{padding:52px 0 42px;border-bottom:1px solid var(--hair)}
+  .over{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--cy);margin-bottom:16px}
+  h1{font-family:var(--display);font-weight:800;color:var(--bone);font-size:clamp(40px,7vw,72px);line-height:1.04}
+  .deck{margin-top:16px;max-width:56ch}
+  .deck b{color:var(--bone)}
+  section{padding:44px 0 8px;border-bottom:1px solid var(--hair)}
+  h2{font-family:var(--display);font-size:22px;color:var(--bone);margin-bottom:20px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--cyd);border-radius:8px;
+    overflow:hidden;background:rgba(13,18,32,.55);margin-bottom:26px}
+  .sp{padding:18px 16px 20px;border-bottom:1px solid var(--hair)}
+  .sp:nth-child(3n+2){border-left:1px solid var(--hair);border-right:1px solid var(--hair)}
+  .sp .n{font-family:var(--mono);font-weight:700;font-size:clamp(20px,3vw,28px);color:var(--cy)}
+  .sp .l{margin-top:5px;font-size:12.5px;color:var(--mut);line-height:1.5}
+  .note{font-family:var(--mono);font-size:12px;color:var(--mut);border:1px dashed var(--cyd);
+    border-radius:6px;padding:14px 16px;margin:34px 0 0}
+  .note a{color:var(--cy);text-decoration:none}
+  @media(max-width:700px){.grid{grid-template-columns:1fr 1fr}.sp:nth-child(3n+2){border-left:none;border-right:none}.sp:nth-child(2n){border-left:1px solid var(--hair)}}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="plate"><span><b>imprint</b> · execution profile</span><span class="sample">sample · synthetic data</span></div>
+  <header>
+    <div class="over">founder · what a profile looks like</div>
+    <h1>Sample Founder</h1>
+    <p class="deck"><b>Not a résumé — telemetry.</b> This is a sample card with synthetic numbers. A real imprint is generated from your own Claude Code traces, locally, and its design is a mixtape of <i>your</i> materials — your product's design language, your top tools, your languages.</p>
+  </header>
+  <section>
+    <h2>Velocity</h2>
+    <div class="grid">
+      <div class="sp"><div class="n">180</div><div class="l">sessions in 60 days — three a day</div></div>
+      <div class="sp"><div class="n">140·120</div><div class="l">commits and pushes — shipping, not hoarding</div></div>
+      <div class="sp"><div class="n">+52 000</div><div class="l">lines shipped across 900 files</div></div>
+    </div>
+  </section>
+  <section style="border-bottom:none">
+    <h2>Leverage</h2>
+    <div class="grid">
+      <div class="sp"><div class="n">1 : 18</div><div class="l">agent moves per human message</div></div>
+      <div class="sp"><div class="n">87%</div><div class="l">of sessions ran in parallel with another</div></div>
+      <div class="sp"><div class="n">40 M</div><div class="l">tokens produced by the agent system</div></div>
+    </div>
+    <div class="note">Generate yours: install the <a href="https://github.com/Yau-427/imprint">imprint skill</a> and run <b>/imprint</b> in Claude Code. Evidence is separated from interpretation; client work stays anonymous; publishing is always your explicit choice.</div>
+  </section>
+</div>
+</body>
+</html>
