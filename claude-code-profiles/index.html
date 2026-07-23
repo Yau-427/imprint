@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Code Profiles · imprint</title>
+<meta name="description" content="Not a résumé — telemetry. One-page founder execution profiles generated from real Claude Code traces.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Spectral:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --g1:#0c101d; --g2:#101827; --bone:#e9e4d4; --tx:#c9d4e4; --mut:#8a9ab1;
+    --cy:#22d3ee; --cy-dim:rgba(34,211,238,.32); --hair:rgba(201,212,228,.12);
+    --term:#46d17e; --amb:#e5a50a; --verm:#c73e1d;
+    --serif:'Spectral',Georgia,serif; --display:'Playfair Display',Georgia,serif;
+    --mono:'JetBrains Mono',ui-monospace,Menlo,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:linear-gradient(175deg,var(--g1),var(--g2) 60%,var(--g1)); color:var(--tx);
+    font-family:var(--serif); font-size:17px; line-height:1.7; -webkit-font-smoothing:antialiased; min-height:100vh}
+  body::before{content:""; position:fixed; inset:0; pointer-events:none;
+    background:radial-gradient(900px 480px at 82% -6%, rgba(34,211,238,.14), transparent 62%)}
+  .sheet{position:relative; max-width:960px; margin:0 auto; padding:0 28px 90px}
+  .plate{display:flex; justify-content:space-between; align-items:baseline; padding:26px 0 14px;
+    border-bottom:1.5px solid var(--cy-dim); font-family:var(--mono); font-size:11.5px;
+    letter-spacing:.14em; text-transform:uppercase; color:var(--mut)}
+  .plate b{color:var(--cy)}
+  .plate a{color:var(--mut); text-decoration:none}
+  .plate a:hover{color:var(--cy)}
+
+  header{padding:64px 0 46px; border-bottom:1px solid var(--hair)}
+  .over{font-family:var(--mono); font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--cy); margin-bottom:20px}
+  h1{font-family:var(--display); font-weight:800; color:var(--bone);
+     font-size:clamp(40px,7.4vw,84px); line-height:1.04; letter-spacing:-.015em; max-width:14ch}
+  .deck{margin-top:20px; max-width:60ch; font-size:19px}
+  .deck b{color:var(--bone); font-weight:600}
+  .cta{margin-top:26px; display:flex; gap:14px; flex-wrap:wrap; font-family:var(--mono); font-size:13px}
+  .btn{display:inline-block; padding:10px 18px; border-radius:4px; text-decoration:none; letter-spacing:.06em}
+  .btn.primary{background:var(--cy); color:var(--g1); font-weight:700}
+  .btn.ghost{border:1px solid var(--cy-dim); color:var(--cy)}
+
+  section{padding:52px 0 8px; border-bottom:1px solid var(--hair)}
+  h2{font-family:var(--display); font-weight:700; font-size:24px; color:var(--bone); margin-bottom:26px}
+  .steps{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-bottom:34px}
+  .step{border:1px solid var(--hair); border-radius:8px; padding:20px 18px; background:rgba(13,18,32,.55)}
+  .step .n{font-family:var(--mono); font-weight:700; color:var(--cy); font-size:13px; letter-spacing:.14em; margin-bottom:10px}
+  .step p{font-size:14.5px; color:var(--tx)}
+  .step code{font-family:var(--mono); font-size:12.5px; color:var(--term); background:rgba(70,209,126,.08);
+    padding:2px 6px; border-radius:3px; word-break:break-all}
+
+  #grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:14px; margin-bottom:34px}
+  .card{display:block; border:1px solid var(--hair); border-radius:8px; padding:20px 18px;
+    text-decoration:none; background:rgba(13,18,32,.55); transition:border-color .15s}
+  .card:hover{border-color:var(--cy)}
+  .card .login{font-family:var(--mono); font-weight:700; font-size:15px; color:var(--bone)}
+  .card .go{font-family:var(--mono); font-size:11px; color:var(--cy); letter-spacing:.12em; text-transform:uppercase; margin-top:8px}
+  .empty{border:1px dashed var(--cy-dim); border-radius:8px; padding:34px 26px; text-align:center;
+    font-family:var(--mono); font-size:13.5px; color:var(--mut); margin-bottom:34px}
+  .empty a{color:var(--cy); text-decoration:none}
+
+  footer{padding:50px 0 0; text-align:center}
+  .fleuron{color:var(--cy); font-size:20px; margin-bottom:18px}
+  footer p{font-size:13.5px; color:var(--mut); margin-bottom:6px}
+  footer a{color:var(--cy); text-decoration:none; border-bottom:1px solid var(--cy-dim)}
+  @media (max-width:760px){ .steps{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="plate"><span><b>imprint</b> · community gallery</span><a href="https://github.com/Yau-427/imprint">github.com/Yau-427/imprint</a></div>
+
+  <header>
+    <div class="over">claude code profiles</div>
+    <h1>Not a résumé — telemetry.</h1>
+    <p class="deck">One-page <b>founder execution profiles</b> generated from real Claude Code traces: what you build, how fast you ship, how much your agent system multiplies you. Evidence separated from interpretation. Design derived from your own materials — every page looks like its author's month.</p>
+    <div class="cta">
+      <a class="btn primary" href="https://github.com/Yau-427/imprint">Make yours →</a>
+      <a class="btn ghost" href="#gallery">Browse profiles</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Three steps</h2>
+    <div class="steps">
+      <div class="step"><div class="n">01 · install</div><p><code>git clone github.com/Yau-427/imprint</code> then copy <code>skill/imprint</code> into <code>~/.claude/skills/</code></p></div>
+      <div class="step"><div class="n">02 · generate</div><p>Run <code>/imprint</code> in Claude Code. Everything is computed locally; your data never leaves your machine.</p></div>
+      <div class="step"><div class="n">03 · publish</div><p>Open a PR adding your page at <code>claude-code-profiles/p/&lt;your-github-login&gt;/index.html</code> — it appears here after merge.</p></div>
+    </div>
+  </section>
+
+  <section id="gallery" style="border-bottom:none">
+    <h2>Profiles</h2>
+    <div id="grid" hidden></div>
+    <div id="empty" class="empty">No profiles published yet — <a href="https://github.com/Yau-427/imprint">be the first</a>.</div>
+  </section>
+
+  <footer>
+    <div class="fleuron">❦</div>
+    <p>Cards are generated by the open-source <a href="https://github.com/Yau-427/imprint">imprint</a> skill. Private-first: publishing is always the author's explicit choice.</p>
+    <p>Hosted by <a href="https://app.iris.direct">Iris</a>.</p>
+  </footer>
+</div>
+
+<script>
+fetch('profiles.json', {cache:'no-store'})
+  .then(function(r){ return r.ok ? r.json() : []; })
+  .then(function(list){
+    if (!Array.isArray(list) || list.length === 0) return;
+    var grid = document.getElementById('grid');
+    list.forEach(function(p){
+      if (!p || !p.login || !/^[A-Za-z0-9-]{1,39}$/.test(p.login)) return;
+      var a = document.createElement('a');
+      a.className = 'card'; a.href = 'p/' + p.login + '/';
+      var l = document.createElement('div'); l.className='login'; l.textContent = p.login;
+      var g = document.createElement('div'); g.className='go'; g.textContent = 'view profile →';
+      a.appendChild(l); a.appendChild(g); grid.appendChild(a);
+    });
+    if (grid.children.length){ grid.hidden = false; document.getElementById('empty').hidden = true; }
+  })
+  .catch(function(){});
+</script>
+</body>
+</html>

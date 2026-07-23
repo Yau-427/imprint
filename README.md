@@ -45,7 +45,7 @@ The agent collects your local stats, drafts the profile, shows it to you, and it
 
 ## Share it
 
-If you make your card public (your call, always), add it to the community gallery — open a PR appending your Pages link to [GALLERY.md](GALLERY.md). Featured profiles appear at **[iris.direct/claude-code-profiles](https://iris.direct/claude-code-profiles)**.
+If you choose to publish (your call, always), open a PR adding your page at `claude-code-profiles/p/<your-github-login>/index.html` — see the [PR guide](claude-code-profiles/p/README.md). After merge your profile goes live at **[iris.direct/claude-code-profiles](https://iris.direct/claude-code-profiles)**, the community gallery of Claude Code founders.
 
 ## How it works
 
