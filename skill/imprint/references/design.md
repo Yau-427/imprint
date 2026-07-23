@@ -41,6 +41,9 @@ Right after the title, a section tells what the person is building THIS month, n
 - Every chart drawn in the palette's ink; no chart libraries, no gridlines-by-default; label directly on the mark, no legends if avoidable.
 - If a dataviz skill is available, consult it for form/accessibility; its neutral palette does NOT apply — this page's palette wins.
 
+**Multilingual — a toggle, not a translation dump.**
+Default language = the user's dominant prompt language; when it isn't English, add an English locale (investors read English) with a small RU·EN-style toggle in the plate. Implementation for a self-contained page: paired `.ru`/`.en` spans + `body[data-lang]` CSS, choice persisted in localStorage, `?lang=` param honored, chart labels redrawn on switch. **Verbatim telemetry is never translated** — commit subjects, prompt quotes stay in their original language in both locales (translate only surrounding labels); numbers adapt punctuation (5,8% ↔ 5.8%).
+
 **«Прочтение» — visibly different voice.**
 The interpretation layer (investor-read) is italic serif with an accent rule, prefixed with a small label «интерпретация · не факты». The reader must never confuse interpretation with evidence.
 

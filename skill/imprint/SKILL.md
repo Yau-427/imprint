@@ -35,7 +35,7 @@ You are making a **credibility artifact for a startup founder**. The audience is
 
 5. **Titling is professional.** The h1 is the **person's name** (from `git config user.name` or ask); the deck line is their positioning: what they build, in one confident sentence. No poetic archetypes in the title — the poetry lives quietly in the craft, not the copy.
 
-6. **Design.** Read `references/design.md` — the binding art direction (print culture as premium differentiator, business-grade tone). If dedicated design skills are available (e.g. dataviz for charts), consult them for craft; the manifesto wins on style conflicts. Write the card to `~/imprint/index.html` in the user's dominant prompt language. Open it for the user.
+6. **Design.** Read `references/design.md` — the binding art direction (print culture as premium differentiator, business-grade tone). If dedicated design skills are available (e.g. dataviz for charts), consult them for craft; the manifesto wins on style conflicts. Write the card to `~/imprint/index.html` in the user's dominant prompt language; when that isn't English, build it bilingual with a language toggle (see the manifesto's Multilingual rule — verbatim telemetry stays untranslated). Open it for the user.
 
 7. **Publish (private-first).** Read `references/publish.md` and follow it exactly: private GitHub repo `imprint` immediately; public flip + Pages **only after an explicit yes in chat**.
 
